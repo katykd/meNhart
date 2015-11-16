@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SimpleMarketing-meNhart</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    header {
+        background-color: purple;
+        height: 100px;
+        width: 200px;
+    }
+    footer {
+      background-color: yellow;
+      height: 100px;
+      width: 100%;
+    }
+    section {
+      background-color: gray;
+      height: 300px;
+      width: 100%;
+    }
+    aside {
+      background-color: blue;
+      height: 200px;
+      width: 100%;
+    }
+    body {
+      max-width: 800px;
+      margin: auto;
+    }
+@media (min-width: 600px){
+  header {
+    width: 10%
+  }
+  main {
+    display:flex;
+    justify-content: space-between;
+  }
+  section {
+    width: 100%;
+  }
+  aside {
+    width: 33%;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <main>
+    <header></header>
+    <header></header>
+    <header></header>
+    <header></header>
+  </main>
+  <main>
+      <section></section>
+  </main>
+  <main>
+      <aside></aside>
+      <aside></aside>
+      <aside></aside>
+  </main>
+  <footer></footer>
+</body>
+</html>
