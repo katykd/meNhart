@@ -45,16 +45,20 @@
     width: 33%;
   }
 }
-
+.nav {
+  display: block;
+}
   </style>
 </head>
 <body>
+<div class="nav">
   <main>
     <header></header>
     <header></header>
     <header></header>
     <header></header>
   </main>
+</div>
   <main>
       <section></section>
   </main>
