@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F0F3F5;
+  padding: 5px;
+}
+header{
+  text-align: left;
+}
+header h1{
+  margin: 10px 0 0;
+}
+header h1 img {
+  width: 200px;
+  height: auto;
+}
+header nav {
+   background-color: #2DAFDD;
+   padding: 15px 0 15px 0;
+   margin: 20px 0px 30px 0px;
+}
+header nav a {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+main {
+  display: flex;
+}
+main section.main-posts{
+  background-color: white;
+  width: 80%;
+}
+aside {
+  width: 20%;
+}
+
+aside article {
+  padding: 20px;
+  margin: 0 10px 10px 10px;
+  background-color: white;
+}
