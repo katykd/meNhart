@@ -2,66 +2,106 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oxygen', sans-serif;
   background-color: #F0F3F5;
   padding: 5px;
-  margin: 20px 165px;
+  margin: 20px auto;
+  max-width: 900px;
 }
 header{
   text-align: left;
+}
+header .header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 header h1{
   margin: 10px 0 0;
   justify-content: space-between;
 }
 header h1 img {
-  width: 200px;
+  width: 250px;
   height: auto;
+}
+header .header-top .social img{
+  width: 25px;
+  height: auto;
+  margin: 2px;
+}
+header .header-top .social img:hover{
+  transform: scale(1.2);
 }
 header nav {
    background-color: #2DAFDD;
-   padding: 15px 0 15px 0;
-   margin: 20px 0px 30px 0px;
+   margin: 20px 0px 12px 0px;
 }
 header nav a {
   font-family: 'Roboto', sans-serif;
   color: white;
-  padding: 10px;
+  padding: 15px 10px;
   text-decoration: none;
+  display: inline-block;
+}
+header nav a:first-child{
+  padding-left: 15px;
+}
+header nav a:hover {
+  background-color: #3FB7E1;
 }
 main {
   display: flex;
+  justify-content: space-between;
 }
 main section.main-posts{
   width: 65%;
 }
-main section.main-posts div.post{
+main section.main-posts .post{
   margin: 0 0 10px;
+  padding: 20px;
   background: white;
 }
-main section.main-posts article{
-  padding: 10px;
-  background-color: white;
-}
-main section.main-posts div.post article.top{
+main section.main-posts .post .top{
   border-bottom: solid 1px #cecece;
-  margin: 0 20px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
 }
-main section.main-posts div.post article.top img{
+main section.main-posts .post .top img{
   width: 20%;
   float: right;
-  padding: 10px 0px 10px 0;
+  padding: 10px 0px;
 }
-main section.main-posts div.post article.top p{
+main section.main-posts .post .top .articletitle{
   display: inline-block;
   font-weight: 400;
   font-size: 30px;
   width: 80%;
+  text-decoration: none;
+  color: black;
 }
-main section.main-posts article.body {
-  padding: 20px;
+main section.main-posts .post .top .entry-time {
+  background-color: rgba(15,165,217, 0.7);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
 }
-main section.main-posts article.body img {
+main section.main-posts .post .top .entry-time .entry-time-day {
+  padding-top: 4px;
+}
+main section.main-posts .post .top .entry-time .entry-time-month {
+    padding-top: 2px;
+    margin-top: 2px;
+    border-top: solid 1px rgba(255, 255, 255, 0.2);
+    display: inline-block;
+}
+main section.main-posts .body img {
   width: 100%;
   height: auto;
   margin: auto;
@@ -69,12 +109,13 @@ main section.main-posts article.body img {
 main section.main-posts article p.subhead{
   display: block;
   width: 100%;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 14px;
+  line-height: 1.6;
+  color: #454545;
 }
 aside {
-  width: 35%;
-  margin: 0 0 0 10px;
+  width: calc(35% - 30px);
 }
 
 aside article {
@@ -83,14 +124,48 @@ aside article {
   background-color: white;
 }
 aside article p.heading {
-  font-weight: 900;
+  font-weight: 700;
   margin: 0px 0 15px;
 }
 aside article div.aboutme img {
-  width: 60%;
+  width: 50%;
   margin: auto;
+  display: block;
+}
+aside article div.aboutme p{
+  color: gray;
+  font-weight: 300;
+  font-size: 12px;
 }
 aside article div.asideimage img {
   width: 100%;
   margin: auto;
+}
+
+footer {
+  background-color: #323232;
+  padding: 0px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+footer div {
+  margin: 0px;
+}
+footer div.copyright {
+  margin: 0px;
+  color: gray;
+  margin: 15px;
+}
+
+footer div.copyright p{
+  display:inline;
+  font-weight: 300;
+}
+footer div.nav a {
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  float: right;
+  margin: 15px;
 }

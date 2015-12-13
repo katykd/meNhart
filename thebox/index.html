@@ -4,15 +4,25 @@
   <meta charset="UTF-8">
   <title>The Box</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,100,100italic,400italic,900italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
-  <h1>
-      <img src="images/TheBoxLogo.png" alt="theboxlogo">
-      <img src="images/SocialIcons.png" alt="socialimages">
-  </h1>
+  <div class="header-top">
+    <h1>
+        <a href="#">
+          <img src="images/TheBoxLogo.png" alt="theboxlogo">
+        </a>
+    </h1>
+
+    <div class="social">
+      <a href="#"><img src="images/social/facebook.png" alt=""></a>
+      <a href="#"><img src="images/social/twitter.png" alt=""></a>
+      <a href="#"><img src="images/social/googleplus.png" alt=""></a>
+      <a href="#"><img src="images/social/gps.png" alt=""></a>
+    </div>
+  </div>
   <nav>
     <a href="#">Home</a>
     <a href="#">Boxed Layout</a>
@@ -23,51 +33,34 @@
 </header>
 <main>
   <section class="main-posts">
-    <div class="post">
-        <article class="top">
-          <p>Here is article one. How interesting! Here is article one.</p>
-          <img src="images/date.png" alt="date">
-        </article>
-        <article class="body">
-          <img src="images/post1image.png" alt="post1image">
-          <p class="subhead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa ...
-          </p>
-        </article>
-    </div>
+    <article class="post">
+        <div class="top">
+          <a href="#" class="articletitle">
+            Here is article one. How interesting! Here is article one.
+          </a>
+          <div class="entry-time">
+      			<div class="entry-time-day">14</div>
+      			<div class="entry-time-month">Dec</div>
+      		</div>
+        </div>
+        <div class="body">
+          <a href="#">
+            <img src="images/post1image.png" alt="post1image">
+          </a>
+          <p class="subhead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa ...</p>
+        </div>
+    </article>
 
-    <div class="post">
-        <article class="top">
-          <p>Here is article two. How interesting! Here is article two.</p>
-          <img src="images/date.png" alt="date">
-        </article>
-        <article class="body">
-          <img src="images/post2image.png" alt="post2image">
-          <p class="subhead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa ...
-          </p>
-        </article>
-    </div>
-
-    <div class="post">
-        <article class="top">
-          <p>Here is article three. How interesting! Here is article three.</p>
-          <img src="images/date.png" alt="date">
-        </article>
-        <article class="body">
-          <img src="images/post3image.png" alt="post3image">
-          <p class="subhead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa ...
-          </p>
-        </article>
-    </div>
-      </section>
+  </section>
   <aside>
         <article>
             <p class="heading">About Me</p>
           <div class="aboutme">
             <img src="images/aside-image1.png" alt="aboutmeimage">
             <p>
-          </div>
-              Here's some more information about me.
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
             </p>
+          </div>
         </article>
         <article>
             <p class="heading">Image</p>
@@ -85,6 +78,9 @@
 </main>
 <footer>
   <div class="copyright">
+    <p>
+      © 2015 by Design Lab
+    </p>
   </div>
   <div class="nav">
     <a href="#">About</a>
