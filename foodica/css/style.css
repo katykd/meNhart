@@ -39,18 +39,12 @@ section.primary .primaryslider div {
   height: 550px;
   background-size: cover;
   background-position: center;
+  display: none;
 }
 
-section.primary .primaryslider div.one {
-  background-image: url("../images/DSC_2589-640x400.jpg");
-}
-
-section.primary .primaryslider div.two {
-  background-image: url("../images/F0X_1950-640x400.jpg");
-}
-
-section.primary .primaryslider div.three {
-  background-image: url("../images/FFF_6428-640x400.jpg");
+section.primary .primaryslider img {
+  width: 100%;
+  height: auto;
 }
 
 section.secondary {
