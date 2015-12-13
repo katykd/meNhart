@@ -5,12 +5,14 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #F0F3F5;
   padding: 5px;
+  margin: 20px 165px;
 }
 header{
   text-align: left;
 }
 header h1{
   margin: 10px 0 0;
+  justify-content: space-between;
 }
 header h1 img {
   width: 200px;
@@ -31,15 +33,64 @@ main {
   display: flex;
 }
 main section.main-posts{
+  width: 65%;
+}
+main section.main-posts div.post{
+  margin: 0 0 10px;
+  background: white;
+}
+main section.main-posts article{
+  padding: 10px;
   background-color: white;
+}
+main section.main-posts div.post article.top{
+  border-bottom: solid 1px #cecece;
+  margin: 0 20px;
+}
+main section.main-posts div.post article.top img{
+  width: 20%;
+  float: right;
+  padding: 10px 0px 10px 0;
+}
+main section.main-posts div.post article.top p{
+  display: inline-block;
+  font-weight: 400;
+  font-size: 30px;
   width: 80%;
 }
+main section.main-posts article.body {
+  padding: 20px;
+}
+main section.main-posts article.body img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+main section.main-posts article p.subhead{
+  display: block;
+  width: 100%;
+  font-weight: 100;
+  font-size: 14px;
+}
 aside {
-  width: 20%;
+  width: 35%;
+  margin: 0 0 0 10px;
 }
 
 aside article {
   padding: 20px;
-  margin: 0 10px 10px 10px;
+  margin: 0 0 25px 0;
   background-color: white;
+}
+aside article p.heading {
+  font-weight: 900;
+  margin: 0px 0 15px;
+}
+aside article div.aboutme img {
+  width: 60%;
+  margin: auto;
+}
+aside article div.asideimage img {
+  width: 100%;
+  margin: auto;
 }
