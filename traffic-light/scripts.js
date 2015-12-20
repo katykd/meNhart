@@ -4,8 +4,6 @@
  * change to be the same color as the light.
  * The font colors should also change to make it readable and pretty.
  */
-console.log('Hey YO');
-
 $('.one').on('click', function(){
   $('body').css({
     background: 'red'
