@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Oxygen', sans-serif;
+  background-color: white;
+  padding: 5px;
+  margin: 20px auto;
+}
+main {
+  display:flex;
+  justify-content: flex-start;
+}
+nav {
+  width: 20%;
+  margin: 0 30px 0 0;
+}
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #707070;
+}
+header img {
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+section {
+    margin: 0px;
+    width: 70;
+}
+section.main-posts {
+  display: flex;
+  width: 70%;
+  max-width: 950px;
+  flex-wrap: wrap;
+
+}
+article {
+    display: inline-block;
+    margin: 0 20px 20px 0;
+}
+article a img {
+  width: 200px;
+  height: auto;
+  margin: 0;
+}
+article p {
+  padding: 0;
+  margin: 0;
+  color: #707070;
+  text-align: center;
+  text-transform: uppercase;
+}
