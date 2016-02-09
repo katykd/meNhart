@@ -29,10 +29,12 @@ nav .nav-items {
     text-transform: uppercase;
     color: #707070;
     text-align: right;
-    margin: 0 0 4px 0;
+    margin: 0 0 6px 0;
+    font-weight: 300;
 }
 .nav-items .subcategory a{
-  color: #C8C8C8;
+  color: #B8B8B8;
+  font-size: 10px;
 }
 section {
     margin: 0px;
@@ -43,16 +45,39 @@ section.main-posts {
   width: 70%;
   max-width: 1150px;
   flex-wrap: wrap;
-
+}
+section.about {
+  margin: 96px 0 0 0;
+}
+section.about p {
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0;
+  width: 85%;
+}
+section.about img {
+  width: 85%;
+  height: auto;
+  margin: 0 0 15px 0;
+  border-bottom: 1px solid #c8c8c8;
+  padding-bottom: 20px;
 }
 article {
     display: inline-block;
     margin: 0 20px 20px 0;
 }
+article:hover {
+  transform: scale(1.02);
+  transition-duration: .3s;
+}
 article a img {
   width: 170px;
   height: auto;
   margin: 0;
+}
+article a img:hover {
+  opacity: 0.75;
+  transition: opacity 0.5s;
 }
 article p {
   padding: 0;
@@ -63,5 +88,8 @@ article p {
   text-transform: uppercase;
 }
 footer p {
-
+  font-size: 8px;
+  color: #c8c8c8;
+  text-align: left;
+  margin: 200px 0 0 30px;
 }
